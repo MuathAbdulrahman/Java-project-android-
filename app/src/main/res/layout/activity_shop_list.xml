@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".shopList">
+
+    <ImageView
+        android:id="@+id/bgapp"
+        android:layout_width="526dp"
+        android:layout_height="929dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/bgapp" />
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:elevation="0dp"
+        android:paddingLeft="60dp"
+        android:paddingTop="20dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SHOPPING LIST"
+            android:textColor="#FFF"
+            android:textSize="30dp"
+            android:fontFamily="casual"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@drawable/user"
+                android:layout_marginRight="10dp"/>
+
+            <TextView
+                android:id="@+id/user"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="User"
+                android:textColor="#FFF"
+                android:textSize="19dp"
+                android:paddingRight="70dp"
+                android:fontFamily="casual"
+
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout_cart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:alpha="1"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.97"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.00999999">
+
+        <ImageView
+            android:id="@+id/tocart"
+            android:layout_width="70dp"
+            android:layout_height="60dp"
+            android:src="@drawable/cart"
+             />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="casual"
+            android:paddingLeft="20dp"
+            android:text="Cart"
+            android:textColor="#FFF"
+            android:textSize="19dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/items"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="200dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Choose what you want : "
+            android:fontFamily="casual"
+            android:textSize="30dp"
+            android:textColor="#233ED8"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp">
+            <ImageView
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:src="@drawable/apple"
+
+                />
+            <ImageView
+                android:id="@+id/apple"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/plus"
+                android:layout_marginLeft="-35dp"
+                />
+
+            <ImageView
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:src="@drawable/salad"
+
+
+                />
+            <ImageView
+                android:id="@+id/salad"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/plus"
+                android:layout_marginLeft="-35dp"
+                />
+
+            <ImageView
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:src="@drawable/lemon"
+
+                />
+            <ImageView
+                android:id="@+id/lemon"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/plus"
+                android:layout_marginLeft="-35dp"
+                />
+
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="5dp">
+            <ImageView
+                android:layout_width="110dp"
+                android:layout_height="120dp"
+                android:src="@drawable/fish"
+
+                />
+            <ImageView
+                android:id="@+id/fish"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/plus"
+                android:layout_marginLeft="-35dp"
+                />
+
+            <ImageView
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:src="@drawable/steak"
+
+                />
+            <ImageView
+                android:id="@+id/steak"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/plus"
+                android:layout_marginLeft="-35dp"
+                />
+
+            <ImageView
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:src="@drawable/food"
+
+                />
+            <ImageView
+                android:id="@+id/food"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/plus"
+                android:layout_marginLeft="-35dp"
+                />
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="-10dp">
+            <ImageView
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:src="@drawable/can"
+
+                />
+            <ImageView
+                android:id="@+id/can"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/plus"
+                android:layout_marginLeft="-35dp"
+                />
+
+            <ImageView
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:src="@drawable/milk"
+
+                />
+            <ImageView
+                android:id="@+id/milk"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/plus"
+                android:layout_marginLeft="-35dp"
+                />
+
+            <ImageView
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:src="@drawable/water"
+
+                />
+            <ImageView
+                android:id="@+id/water"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/plus"
+                android:layout_marginLeft="-35dp"
+                />
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
